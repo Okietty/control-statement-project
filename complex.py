@@ -31,8 +31,10 @@ if len(passworkChecker) == 8:
     if lowerLetter == True:
         for i in '1234567890':
             if i in passworkChecker:
-                print("This password is valid.")
                 numInPass = True
+
+    if numInPass == True:
+        print("This password is valid.")
 
     if numInPass == False:
         print("This password is invalid, please try a different password.")
